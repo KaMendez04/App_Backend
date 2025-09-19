@@ -7,12 +7,10 @@ export interface Totals {
   projectedBalance: number;
 }
 
-export type GroupBy = 'department' | 'type' | 'subtype';
-
 export interface ComparisonRow {
   id: number;
   name: string;
   real: number;
   projected: number;
-  diff: number; // real - projected
+  diff: number; // ÚNICO cálculo permitido en Home: real - projected
 }

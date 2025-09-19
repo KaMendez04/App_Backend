@@ -10,7 +10,7 @@ import { UpdatePSpendTypeByDepartmentDto } from './dto/update.dto';
 export class PSpendTypeByDepartmentService {
   constructor(
     @InjectRepository(PSpendTypeByDepartment) private repo: Repository<PSpendTypeByDepartment>,
-    @InjectRepository(Department) private deptRepo: Repository<Department>,
+    @InjectRepository(Department) private deptRepo: Repository<Department>
   ) {}
 
   async create(dto: CreatePSpendTypeByDepartmentDto) {

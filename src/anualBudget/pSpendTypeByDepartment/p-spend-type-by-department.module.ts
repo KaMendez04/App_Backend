@@ -9,6 +9,6 @@ import { PSpendTypeByDepartmentController } from './p-spend-type-by-department.c
   imports: [TypeOrmModule.forFeature([PSpendTypeByDepartment, Department])],
   controllers: [PSpendTypeByDepartmentController],
   providers: [PSpendTypeByDepartmentService],
-  exports: [TypeOrmModule],
+  exports: [PSpendTypeByDepartmentService],
 })
 export class PSpendTypeByDepartmentModule {}
